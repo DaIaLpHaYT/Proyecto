@@ -37,7 +37,7 @@ MODELO BACKEND (Servidor)
 
 ┌─────────────┐                           ┌─────────────┐
 │             │   1. Petición HTTP        │             │
-│  Navegador  │ ───────────────────────> │  Servidor   │
+│  Navegador  │ ───────────────────────>  │  Servidor   │
 │   Cliente   │                           │   Backend   │
 │             │                           │             │
 │             │                           │  ┌────────┐ │
@@ -59,11 +59,11 @@ MODELO FRONTEND (Cliente)
 
 ┌─────────────┐                           ┌─────────────┐
 │             │   1. Solicita recursos    │             │
-│  Navegador  │ ───────────────────────> │  Servidor   │
+│  Navegador  │ ───────────────────────>  │  Servidor   │
 │   Cliente   │    (HTML, CSS, JS)        │    Web      │
 │             │                           │             │
 │             │   2. Envía archivos       │             │
-│             │ <─────────────────────── │             │
+│             │ <───────────────────────  │             │
 │  ┌────────┐ │                           └─────────────┘
 │  │ Motor  │ │
 │  │   JS   │ │  3. Ejecuta JavaScript
