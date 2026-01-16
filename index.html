@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de desarrollo web">
+    <title>Mi Portafolio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🚀 MiPortafolio</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>¡Bienvenido a mi Portafolio Digital!</h2>
+            <p>Desarrollo web moderno con tecnologías de última generación</p>
+            <button class="hero-btn" onclick="scrollToSection('proyectos')">Ver Proyectos</button>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <p>Explora algunos de mis trabajos más recientes y destacados.</p>
+            
+            <div class="proyectos-grid">
+                <article class="proyecto-card">
+                    <h3>E-Commerce App</h3>
+                    <p>Tienda online completa con carrito de compras y pasarela de pago integrada.</p>
+                    <span class="badge">React</span>
+                    <span class="badge">Node.js</span>
+                </article>
+                
+                <article class="proyecto-card">
+                    <h3>Dashboard Analytics</h3>
+                    <p>Panel de control interactivo con visualización de datos en tiempo real.</p>
+                    <span class="badge">Vue.js</span>
+                    <span class="badge">D3.js</span>
+                </article>
+                
+                <article class="proyecto-card">
+                    <h3>App Móvil Fitness</h3>
+                    <p>Aplicación para seguimiento de ejercicios y nutrición personalizada.</p>
+                    <span class="badge">React Native</span>
+                    <span class="badge">Firebase</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Contador Interactivo</h2>
+            <p>Demostración de JavaScript: Un contador dinámico y funcional</p>
+            
+            <div class="counter-container">
+                <button class="counter-btn" id="decrementBtn" onclick="decrementar()">−</button>
+                <div class="counter-display" id="contador">0</div>
+                <button class="counter-btn" id="incrementBtn" onclick="incrementar()">+</button>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1rem;">
+                <button class="counter-btn reset-btn" onclick="resetear()">↺</button>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="asunto">Tipo de proyecto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">Selecciona una opción</option>
+                        <option value="web">Desarrollo Web</option>
+                        <option value="app">Aplicación Móvil</option>
+                        <option value="ecommerce">E-Commerce</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+            
+            <div class="mensaje-confirmacion" id="mensajeConfirmacion">
+                ✓ ¡Mensaje enviado con éxito! Te contactaré pronto.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MiPortafolio. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#" title="GitHub">GitHub</a>
+            <a href="#" title="LinkedIn">LinkedIn</a>
+            <a href="#" title="Twitter">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
